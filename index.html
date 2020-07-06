@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link href="Content/slick.css" rel="stylesheet" />
+    <link href="Content/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-1">
+            <div class="header-info">
+                <span class="sdt">SĐT 0981-598-298</span><span>Email: info@vntsc.vn</span>
+            </div>
+            <div class="header-info header2">
+                <span>Trụ sở: Số 39 Ngõ 80 Hoàng Đạo Thành, Kim Giang, Thanh xuân, Hà Nội</span><span>Bản đồ</span>
+            </div>
+        </div>
+        <div class="wrap" id="myHeader">
+            <div class="header-2">
+                <div class="logo">
+                    <a href="#"><img id="img-logo" src="./img/logo(1).png" alt=""></a>
+                </div>
+                <div class="icon-menu">
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </div>
+                <ul class="header-2-ul" id="header-2-ul">
+                    <li id="close-menu" onclick="closeMenu()"><i class="fas fa-times"></i></li>
+                    <li data-aos="fade-down" data-aos-delay="100">
+                        <a href="">Đồ bơi nữ</a><i class="fas fa-chevron-up down1"></i></i>
+                        <ul class="header-2-ul-item">
+                            <li id="header-2-ul-item-2">
+                                <a href="">Đồ bơi bikini</a><i class="fas fa-chevron-left down1"></i>
+                                <ul class="header-2-ul-item-2">
+                                    <li>Bikini 2 mảnh</li>
+                                    <li>Bikini 1 mảnh</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Phụ kiện bikini</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="150">
+                        <a href="">Đồ bơi nam</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="200">
+                        <a href="">Đồ bơi cặp</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="250">
+                        <a href="">Giới thiệu</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="300">
+                        <a href="">Tin tức</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="350">
+                        <a href="">Liên hệ</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="400">
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="450">
+                        <a href="">0 sản phẩm <img class="cart" src="./img/cart.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="test" role="toolbar">
+        <div class="slide-img">
+            <img src="./img/slide1.jpg" alt="First slide">
+        </div>
+        <div class="slide-img">
+            <img src="./img/slide2.jpg" alt="First slide">
+        </div>
+    </div>
+
+    <section>
+        <div class="wrap">
+            <div class="row row2">
+                <div class="col-lg-3 col-sm-6 col-6 center">
+                    <div class="section-ul" data-aos="fade-down" data-aos-delay="200">
+                        <img src="./img/home_service_1.png " alt=" ">
+                        <div class="info">
+                            <h2>Giao hàng miễn phí</h2>
+                            <p>Đơn hàng > 500.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 center">
+                    <div class="section-ul" data-aos="fade-down" data-aos-delay="250">
+                        <img src="./img/home_service_2.png " alt=" ">
+                        <div class="info">
+                            <h2>Quà tặng</h2>
+                            <p>Nhiều quà tặng ưu đãi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 center">
+                    <div class="section-ul" data-aos="fade-down" data-aos-delay="300">
+                        <img src="./img/home_service_3.png " alt=" ">
+                        <div class="info">
+                            <h2>Thương hiệu số 1</h2>
+                            <p>Mua sắm trực tuyến uy tín</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 center">
+                    <div class="section-ul" data-aos="fade-down" data-aos-delay="350">
+                        <img src="./img/home_service_4.png " alt=" ">
+                        <div class="info">
+                            <h2>Hotline 1900636099</h2>
+                            <p>Hỗ trợ nhanh chóng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-xl-6 col-12">
+                    <div class="item2">
+                        <img src="./img/adv1.png " alt=" ">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12">
+                    <div class="item2">
+                        <img src="./img/adv2.png " alt=" ">
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-b">
+                <div class="col-xl-4">
+                    <div class="row-info">
+                        <h2>Bộ bơi thể thao đẹp</h2>
+                        <p>Xem ngay</p>
+                    </div>
+                    <div class="item2">
+                        <img src="./img/adv-center4.jpg " alt=" ">
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="item2">
+                        <img src="./img/avd-center1.jpg " alt=" ">
+                    </div>
+                    <div class="row-info">
+                        <h2>Hotline 1900636099</h2>
+                        <p>Hỗ trợ nhanh chóng</p>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="row-info ">
+                        <h2>Hotline 1900636099</h2>
+                        <p>Hỗ trợ nhanh chóng</p>
+                    </div>
+                    <div class="item2">
+                        <img src="./img/adv-center2.jpg " alt=" ">
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-b">
+                <div class="col-xl-6">
+                    <h1>#Đồ bơi bikini</h1>
+                    <div class="item2"><img src="./img/bikinibikini-mot-manh-1b.png " alt=" "></div>
+                </div>
+                <div class="col-xl-6">
+                    <ul class="row-ul">
+                        <li class="row-li">
+                            <a href=" ">Bikini một mảnh</a>
+                        </li>
+                        <li class="row-li">
+                            <a href=" ">Bikini 2 mảnh</a>
+                        </li>
+                        <li class="row-li">
+                            <a href=" ">Bikini cạp cao</a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-6 col-xl-6">
+                            <div class="item2"><img src="./img/sp10-ava.jpg " alt=" "></div>
+                            <div class="price">
+                                <h3>Bikini Korea Style 4</h3>
+                                <span class="line-through">210.000</span><span>190.000</span>
+                            </div>
+                            <span id="sale">-5%</span>
+                        </div>
+                        <div class="col-6 col-xl-6">
+                            <div class="item2"><img src="./img/sp11-ava.jpg " alt=" "></div>
+                            <div class="price">
+                                <h3>Bikini Korea Style 4</h3>
+                                <span class="line-through">210.000</span><span>190.000</span>
+                            </div>
+                            <span id="sale">-5%</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-xl-6">
+                            <div class="item2"><img src="./img/sp9-ava.jpg " alt=" "></div>
+                            <div class="price">
+                                <h3>Bikini Korea Style 4</h3>
+                                <span class="line-through">210.000</span><span>190.000</span>
+                            </div>
+                            <span id="sale">-5%</span>
+                        </div>
+                        <div class="col-6 col-xl-6">
+                            <div class="item2"><img src="./img/sp12-ava.jpg " alt=" "></div>
+                            <div class="price">
+                                <h3>Bikini Korea Style 4</h3>
+                                <span class="line-through">210.000</span><span>190.000</span>
+                            </div>
+                            <span id="sale">-5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <ul class="row-ul">
+                        <li><a href=" ">Bikini một mảnh</a></li>
+                        <li>
+                            <a href=" ">Bikini 2 mảnh</a>
+                        </li>
+                        <li>
+                            <a href=" ">Bikini cạp cao</a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-6 col-xl-6">
+                            <div class="item2"><img src="./img/pk10-ava.jpg " alt=" "></div>
+                            <div class="price">
+                                <h3>Bikini Korea Style 4</h3>
+                                <span class="line-through">210.000</span><span>190.000</span>
+                            </div>
+                            <span id="sale">-5%</span>
+                        </div>
+                        <div class="col-6 col-xl-6">
+                            <div class="item2"><img src="./img/pk12-ava.jpg" alt=" "></div>
+                            <div class="price">
+                                <h3>Bikini Korea Style 4</h3>
+                                <span class="line-through">210.000</span><span>190.000</span>
+                            </div>
+                            <span id="sale">-5%</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-xl-6">
+                            <div class="item2"><img src="./img/pk5-ava.jpg" alt=" "></div>
+                            <div class="price">
+                                <h3>Bikini Korea Style 4</h3>
+                                <span class="line-through">210.000</span><span>190.000</span>
+                            </div>
+                            <span id="sale">-5%</span>
+                        </div>
+                        <div class="col-6 col-xl-6">
+                            <div class="item2">
+                                <img src="./img/pk9-ava.jpg" alt=" ">
+                            </div>
+                            <div class="price">
+                                <h3>Bikini Korea Style 4</h3>
+                                <span class="line-through">210.000</span><span>190.000</span>
+                            </div>
+                            <span id="sale">-5%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <h1>#Phụ kiện đồ bơi</h1>
+                    <div class="item2">
+                        <img src="./img/phu-kienphu-kien-do-boi-1b.png" alt=" ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us">
+            <div class="about-info">
+                <h4>Phương châm kinh doanh của</h4>
+                <h2>Shop thời trang bikini beach</h2>
+                <p>Mỗi nhân viên của Bikini Beach luôn tỏ ra biết ơn Khách hàng bằng việc kinh doanh những sản phẩm tốt nhất – thời thượng nhất và chu đáo nhất để đáp ứng được nhu cầu của quý khách hàng.</p>
+                <ul class="about-ul">
+                    <li>
+                        <a href=" "><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-google"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="about-info">
+                <h2>Sản phẩm mới</h2>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-6 col-xl-3">
+                    <div class="item2"><img src="./img/sp9-ava.jpg" alt=" "></div>
+                    <div class="price">
+                        <h3>Bikini Korea Style 4</h3>
+                        <span class="line-through">210.000</span><span>190.000</span>
+                    </div>
+                    <span id="sale">-5%</span>
+                </div>
+                <div class="col-6 col-xl-3 ">
+                    <div class="item2"><img src="./img/sp12-ava.jpg" alt=" "></div>
+                    <div class="price">
+                        <h3>Bikini Korea Style 4</h3>
+                        <span class="line-through">210.000</span><span>190.000</span>
+                    </div>
+                    <span id="sale">-5%</span>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <div class="item2"><img src="./img/sp12-ava.jpg" alt=" "></div>
+                    <div class="price">
+                        <h3>Bikini Korea Style 4</h3>
+                        <span class="line-through">210.000</span><span>190.000</span>
+                    </div>
+                    <span id="sale">-5%</span>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <div class="item2"><img src="./img/sp12-ava.jpg" alt=" "></div>
+                    <div class="price">
+                        <h3>Bikini Korea Style 4</h3>
+                        <span class="line-through">210.000</span><span>190.000</span>
+                    </div>
+                    <span id="sale">-5%</span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-6 col-xl-3">
+                    <div class="item2"><img src="./img/sp9-ava.jpg" alt=" "></div>
+                    <div class="price">
+                        <h3>Bikini Korea Style 4</h3>
+                        <span class="line-through">210.000</span><span>190.000</span>
+                    </div>
+                    <span id="sale">-5%</span>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <div class="item2"><img src="./img/sp12-ava.jpg" alt=" "></div>
+                    <div class="price">
+                        <h3>Bikini Korea Style 4</h3>
+                        <span class="line-through">210.000</span><span>190.000</span>
+                    </div>
+                    <span id="sale">-5%</span>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <div class="item2"><img src="./img/sp12-ava.jpg" alt=""></div>
+                    <div class="price">
+                        <h3>Bikini Korea Style 4</h3>
+                        <span class="line-through ">210.000</span><span>190.000</span>
+                    </div>
+                    <span id="sale">-5%</span>
+                </div>
+                <div class="col-6 col-xl-3">
+                    <div class="item2"><img src="./img/sp12-ava.jpg" alt=" "></div>
+                    <div class="price">
+                        <h3>Bikini Korea Style 4</h3>
+                        <span class="line-through">210.000</span><span>190.000</span>
+                    </div>
+                    <span id="sale">-5%</span>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="about-info">
+                <h2>Xu hướng đồ bơi</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6 row-xhuong">
+                    <img src="./img/90-phan-tram-cac-my-nu-phon-thuc-deu-yeu-kieu-bikini-mat-mat-nay-ava.png" id="img-xhuong" alt=" ">
+                    <div class="box">
+                        <span id="span1 ">30</span><span>TH 10</span>
+                        <h2>Kiểu bikini “xôi thịt” kỳ cục đang náo loạn khắp các bãi biển</h2>
+                        <p>Kiểu áo tắm đang là hot trend của năm 2017 cực kỳ phù hợp với các cô nàng sở hữu thân hình "phồn thực " vòng nào ra vòng nấy.</p>
+                        <a href=" ">Xem tiếp</a>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 row-xhuong">
+                    <img src="./img/kieu-bikini-xoi-thit-ky-cuc-dang-nao-loan-cac-bai-bien-ava.png" id="img-xhuong" alt=" ">
+                    <div class="box">
+                        <span id="span1">30</span><span>TH 10</span>
+                        <h2>Kiểu bikini “xôi thịt” kỳ cục đang náo loạn khắp các bãi biển</h2>
+                        <p>Kiểu áo tắm đang là hot trend của năm 2017 cực kỳ phù hợp với các cô nàng sở hữu thân hình "phồn thực " vòng nào ra vòng nấy.</p>
+                        <a href=" ">Xem tiếp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="wrap">
+        <div class="row row1 " style="text-align: center;">
+            <div class="col-12 col-xl-4">
+                <span id="span-footer">CÔNG TY CPDV CÔNG NGHỆ VIỆT NAM</span>
+                <span>© 2016 VNTSC.,JSC - GPKD số 0107399588 - Cấp ngày 15/04/2016 - Sở KHĐT THÀNH PHỐ HÀ NỘI</span>
+            </div>
+            <div class="col-12 col-xl-4">
+                <span id="span-footer">Kết nối với chúng tôi</span>
+                <ul class="about-ul about-footer">
+                    <li>
+                        <a href=" "><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-google"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=" "><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-xl-4">
+                <span id="span-footer">Hotline hỗ trợ</span>
+                <img src="./img/icon_call.png " alt=" " style="width:42px;">
+                <span style="font-size: 25px;">0981.598.298</span>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-6 col-xl-3">
+                <ul class="ul-footer">
+                    <li id="span-footer">thông tin hỗ trợ</li>
+                    <li>Đồ bơi nữ</li>
+                    <li>Đồ bơi nam</li>
+                    <li>Đồ bơi cặp</li>
+                    <li>Giới thiệu</li>
+                    <li>Blog</li>
+                    <li>Liên hệ</li>
+                </ul>
+            </div>
+            <div class="col-6 col-xl-3">
+                <ul class="ul-footer">
+                    <li id="span-footer">dịch vụ khách hàng</li>
+                    <li>Đồ bơi nư</li>
+                    <li>Đồ bơi nam</li>
+                    <li>Đồ bơi cặp</li>
+                    <li>Giới thiệu</li>
+                    <li>Blog</li>
+                    <li>Liên hệ</li>
+                </ul>
+            </div>
+            <div class="col-6 col-xl-2">
+                <ul class="ul-footer">
+                    <li id="span-footer">dịch vụ & hỗ trợ</li>
+                    <li>Đồ bơi nư</li>
+                    <li>Đồ bơi nam</li>
+                    <li>Đồ bơi cặp</li>
+                    <li>Giới thiệu</li>
+                    <li>Blog</li>
+                    <li>Liên hệ</li>
+                </ul>
+            </div>
+            <div class="col-6 col-xl-4">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvntsc.vn%2F&amp;tabs=timeline&amp;width=321&amp;height=210&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId "
+                    width="321 " height="210 " style="border:none;overflow:hidden " scrolling="no " frameborder="0 " allowtransparency="true " allow="encrypted-media "></iframe>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-6 col-xl-3">
+                <i class="fas fa-envelope-open-text"></i>
+                <span id="span-footer" style="display:inline;">Đăng ký nhận bản tin shop</span>
+            </div>
+            <div class="col-6 col-xl-4">
+                <p>Cập nhật thông tin khuyến mãi nhanh nhất Hưởng quyền lợi giảm giá riêng biệt</p>
+            </div>
+            <div class="col-6 col-xl-5 input-footer">
+                <input type="text " placeholder="*Email"><button>GỬI</button>
+            </div>
+        </div>
+        <div class="last-footer" style="padding: 10px 0;">
+            <span>© 2000-2019 VNTSC Vietnam. All rights reserved</span>
+            <span id="float-right">Thiết kế bởi vntsc.vn</span>
+        </div>
+    </div>
+</footer>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="Scripts/slick.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    function openMenu() {
+        document.getElementById("header-2-ul").style.right = "0";
+    }
+
+    function closeMenu() {
+        document.getElementById("header-2-ul").style.right = "-50%";
+    }
+
+    window.onscroll = function() {
+        myFunction()
+    };
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+    $(document).ready(function() {
+        $('.test').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000
+        });
+    })
+</script>
